@@ -34,7 +34,7 @@ header li {
 #header-container {
     display: flex;
     align-items: center;
-    margin: 1% 5%;
+    margin: 0% 5%;
     height: 50px;
 }
 
@@ -78,6 +78,7 @@ header li {
     max-width: 100%;
     width: 100%;
     height: 1000px;
+    padding-top:130px;
 }
 .blok1{
     max-width: 100%;
@@ -107,6 +108,31 @@ header li {
     margin-bottom: 25px;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
+}
+.blok2{
+    margin-top: 50px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+}
+#google{
+    max-width: 100%;
+    width: 700px;
+    height: 200px;
+}
+#Helle{
+    max-width: 100%;
+    width: 25%;
+    height: 400px;
+    margin-left: 20px;
+    clear: left;
+}
+.tekst2{
+    background-color: #6E4F7D;
 }
 footer{
     max-width: 100%;
