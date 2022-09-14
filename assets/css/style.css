@@ -133,6 +133,29 @@ header li {
 }
 .tekst2{
     background-color: #6E4F7D;
+    max-width: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    height: 180px;
+}
+#location{
+    float: left;
+    margin-right: 10px;
+   padding-top: 20px;
+   width: 20px;
+}
+#tekst3{
+    padding: 10px;
+    font-size: 12px;
+    padding-top: 20px;
+}
+#phone{
+    float: left;
+    margin-right: 10px;
+   padding-top: 20px;
+   width: 30px;
 }
 footer{
     max-width: 100%;
