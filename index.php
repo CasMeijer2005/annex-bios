@@ -1,7 +1,6 @@
 <?php
 include "assets/includes/db.php";
 include "assets/includes/head.php";
-
 include 'assets/includes/header.php'; ?>
 <div class="bgn">
     <div class="blok1">
@@ -32,6 +31,3 @@ include 'assets/includes/header.php'; ?>
     </div>
 </div>
 <?php include 'assets/includes/footer.php' ?>
-</body>
-
-</html>

@@ -38,3 +38,6 @@
     </ul>
     <img id="filmlijn" src="assets/img/filmlijn.png">
 </footer>
+</body>
+
+</html>
