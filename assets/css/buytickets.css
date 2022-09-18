@@ -117,9 +117,13 @@ label {
     padding: 5px 75px;
 }
 
+.choose-seats {
+    margin-top: 75px;
+}
+
 .order-seat-placement {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -128,6 +132,146 @@ label {
     width: 700px;
 }
 
-.order-seat-buttons {
-    
+#available-button {
+    background-color: #9D7EC8;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
 }
+
+#unavailable-button {
+    background-color: #523579;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#selected-button {
+    background-color: #794EB4;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.order-info {
+    margin-top: 50px;
+}
+
+.order-info-border {
+    border: 3px solid #6E4F7D;
+    margin: 30px 0 50px;
+    height: 440px;
+}
+
+.order-info-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.order-info-poster {
+    object-fit: contain;
+    height: 400px;
+}
+
+.order-ticket-info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+
+.order-ticket-title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.order-ticket-film-restrictions img {
+    margin-right: 3px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.order-ticket {
+    padding: 0;
+}
+  
+.order-ticket li {
+    display: flex;
+}
+
+.order-ticket p {
+    margin: 0;
+}
+
+.additional-info-header {
+    padding: 0 5px 0 0;
+}
+
+.order-ticket-total {
+    margin-top: 20px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    margin: 30px 0 50px;
+}
+
+.email-input {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.name-input, .email-input {
+    border: 2px solid #6E4F7D;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 15px;
+    color: #797979;
+}
+
+.payment-choice {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.payment-choice li {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.tos-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#tos-text {
+    color: #666666;
+}
+
+.buy-ticket {
+    display: flex;
+    justify-content: center;
+    background-color: #6e4f7d;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px 0 50px 0;
+    text-transform: uppercase;
+  }
