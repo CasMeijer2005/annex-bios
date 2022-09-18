@@ -1,0 +1,133 @@
+#ticket-body {
+    background-color: black;
+    color: #797979;
+}
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.film-title-ticket {
+    background-color: white;
+    margin: 4% 0 3%;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.film-title-ticket h1 {
+    color: #6e4f7d;
+    text-transform: uppercase;
+    margin: 15px 0 15px 25px;
+  }
+
+.ticket-options {
+    display: flex;
+}
+
+.select {
+    background-color: white;
+    color: #6E4F7D;
+    border: none;
+    border-radius: 1px;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    margin: 25px 10px 40px 0;
+}
+
+.select p {
+    margin: auto;
+}
+
+.order-page {
+    background-color: white;
+}
+
+.order-page-info {
+    margin: 2% 2.5%;
+}
+
+.buy-steps {
+    color: #6E4F7D;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.buy-steps h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.ticket-grid-container {
+    display: grid;
+    grid-template-columns: 85% 10% 0%;
+}
+
+.ticket-info p {
+    text-transform: uppercase;
+    margin: 25px 0 0;
+}
+
+.ticket-select {
+    width: 60px;
+    height: 25px;
+    margin: 5px 0;
+    text-align: center;
+    border-width: 1.2px;
+    border-color: #6E4F7D;
+}
+
+#bottom-hr {
+    margin: 15px 0;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-price {
+    margin: 10px 0;
+}
+
+.ticket-voucher {
+    display: flex;
+    justify-content: space-between;
+}
+
+#voucher-text {
+    text-transform: uppercase;
+}
+
+#voucher-input {
+    width: 70%;
+    text-align: start;
+    font-size: 10px;
+    padding-left: 15px;
+    border-width: 1.2px;
+    border-color: #6E4F7D;
+}
+
+#voucher-button {
+    border: none;
+    background-color: #6E4F7D;
+    color: white;
+    padding: 5px 75px;
+}
+
+.order-seat-placement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order-seat-placement img {
+    object-fit: contain;
+    width: 700px;
+}
+
+.order-seat-buttons {
+    
+}

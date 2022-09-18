@@ -2,7 +2,7 @@
 
     <nav>
         <a href="/index.html">
-            <img id="page-logo" src="assets/img/AnnexBios Logo.png" alt="AnnexBios logo">
+            <img id="page-logo" src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
         </a>
         <ul>
             <li>
@@ -25,7 +25,7 @@
                 <option value="DeadPool2">DeadPool 2</option>
                 <option value="Solo">Solo: A Star Wars Story</option>
             </select>
-            <a href="/index.html">Bestel Tickets</a>
+            <a href="buytickets.php">Bestel Tickets</a>
         </div>
     </div>
 </header>
