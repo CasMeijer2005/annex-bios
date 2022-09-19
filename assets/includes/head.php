@@ -8,6 +8,7 @@
     <title>AnnexBios - Bilthoven </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Hier komt een Include met alle CSS Bestanden -->
+    <link rel="stylesheet" href="assets/css/buytickets.css">
 
 </head>
 

@@ -9,7 +9,7 @@ include "assets/includes/header.php";
     <div id="main-body">
         <div id="main-info">
             <div class="film-title">
-                <h1>Jurassic Park: Fallen Kingdom</h1>
+                <h1>Jurassic World: Fallen Kingdom</h1>
             </div>
             <div class="container-film">
                 <img src="assets/img/JurassicPark Poster.png" alt="JurassicPark">
