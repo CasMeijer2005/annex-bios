@@ -74,7 +74,7 @@ include "assets/includes/header.php";
 
         for ($eee = 0; $eee < $annexLength; $eee++) {
             echo '<div class="filmposter">
-            <img id="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
+            <img class="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
             <div id="textfilm">
                 <h2 id="tf">' . $filmdata[$eee]["film_title"] . '</h2>
                 <img id="star" src="assets/img/Path 23.png">
@@ -91,7 +91,7 @@ include "assets/includes/header.php";
         }
         for ($eee = 0; $eee < $annexLength; $eee++) {
             echo '<div class="filmposter">
-            <img id="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
+            <img class="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
             <div id="textfilm">
                 <h2 id="tf">' . $filmdata[$eee]["film_title"] . '</h2>
                 <img id="star" src="assets/img/Path 23.png">

@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 header {
   background-color: #fff;
@@ -217,7 +217,7 @@ header li {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   margin: 0 auto;
   width: 90%;
 }
@@ -225,10 +225,10 @@ header li {
   padding: 5px;
 }
 
-#poster {
+.poster {
   max-width: 100%;
   width: 200px;
-  height: auto;
+  height: 300px;
 }
 #textfilm {
   background-color: #fff;
