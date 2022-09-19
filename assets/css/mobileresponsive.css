@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    #logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    #page-logo {
+        width: 100px;
+    }
+
+    nav {
+        justify-content: start;
+    }
+
+    nav ul {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 0;
+    }
+
+    li h2 {
+        font-size: 10px;
+    }
+}

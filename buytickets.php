@@ -35,7 +35,7 @@ include "assets/includes/header.php"
                                     <p>Prijs</p>
                                     <p>Aantal</p>
                                 </div>
-                                <hr id="top-hr">
+                                <hr>
                                 <div class="ticket-grid-container">
                                     <label for="normal-tickets">Normaal</label>
                                     <p class="ticket-price">&#8364; 9,00</p>
