@@ -130,4 +130,4 @@ include "assets/includes/header.php";
         </div>
     </div>
 </main>
-<?php include "assets/includes/footer.php"; ?>
+<?php include 'assets/includes/footer.php'; ?>
