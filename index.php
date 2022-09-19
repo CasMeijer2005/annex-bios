@@ -1,7 +1,17 @@
 <?php
 require_once "assets/includes/db.php";
 include "assets/includes/head.php";
-include "assets/includes/header.php"
+include "assets/includes/header.php";
+
+
+// echo '<div class="card">
+// <img src="' . $filmdata[$eee]["film_photo"] . '" alt="image" width="100px" height="170px">
+// <h2>' . $filmdata[$eee]["film_title"] . '</h2>
+// <p>Release date: '  . $filmdata[$eee]["film_releasedate"] . ' <br>
+// Rating: ' . str_replace('.', ',', intval($filmdata[$eee]["film_rating"]) / 10) . ' / 10 <br>
+// Genre: ' . implode(", ", $filmdata[$eee]["genres"]) . '
+// <br> <br>' . $filmdata[$eee]["film_shortinfo"] . '
+// </p> </div>';
 ?>
 
 <div class="film-agenda">
@@ -56,119 +66,52 @@ include "assets/includes/header.php"
         </select>
     </div>
     <div class="flex">
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
+        <?php
+        $rawData = file_get_contents('https://annexbios.nickvz.nl/api/');
+        $annex = json_decode($rawData, true);
+        $annexLength = sizeof($annex["filmdata"]);
+        $filmdata = $annex["filmdata"];
+
+        for ($eee = 0; $eee < $annexLength; $eee++) {
+            echo '<div class="filmposter">
+            <img id="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
             <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
+                <h2 id="tf">' . $filmdata[$eee]["film_title"] . '</h2>
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
+                <h4 id="tf2">'  . $filmdata[$eee]["film_releasedate"] . '
                 </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
+                <h4 id="tf3">' . $filmdata[$eee]["film_shortinfo"] . '</h4>
                 <button id="btn-draaiende">MEER INFO & TICKETS</button>
 
             </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
+        </div>';
+        }
+        for ($eee = 0; $eee < $annexLength; $eee++) {
+            echo '<div class="filmposter">
+            <img id="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
             <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
+                <h2 id="tf">' . $filmdata[$eee]["film_title"] . '</h2>
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
+                <h4 id="tf2">'  . $filmdata[$eee]["film_releasedate"] . '
                 </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
+                <h4 id="tf3">' . $filmdata[$eee]["film_shortinfo"] . '</h4>
                 <button id="btn-draaiende">MEER INFO & TICKETS</button>
 
             </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
-            <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
-                </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
-                <button id="btn-draaiende">MEER INFO & TICKETS</button>
+        </div>';
+        }
+        ?>
 
-            </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
-            <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
-                </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
-                <button id="btn-draaiende">MEER INFO & TICKETS</button>
 
-            </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
-            <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
-                </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
-                <button id="btn-draaiende">MEER INFO & TICKETS</button>
-
-            </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
-            <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
-                </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
-                <button id="btn-draaiende">MEER INFO & TICKETS</button>
-
-            </div>
-        </div>
-        <div class="filmposter">
-            <img id="poster" src="assets/img/JurassicPark Poster.png">
-            <div id="textfilm">
-                <h2 id="tf">JURASSIC WORLD: Fallen Kingdom</h2>
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <img id="star" src="assets/img/Path 23.png">
-                <h4 id="tf2">Release: 7-06-2018
-                </h4>
-                <h4 id="tf3">Welkom in Jurassic World: Fallen Kingdom! Favoriete personages keren terug in dit
-                    3D actie-spektakel.</h4>
-                <button id="btn-draaiende">MEER INFO & TICKETS</button>
-
-            </div>
-        </div>
     </div>
+</div>
+</div>
 </div>
 
 <?php
