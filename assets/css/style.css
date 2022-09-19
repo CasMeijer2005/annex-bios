@@ -421,3 +421,281 @@ footer ul li button {
 }
 
 /* Footer */
+#ticket-body {
+  background-color: black;
+  color: #797979;
+}
+
+#main-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.film-title-ticket {
+  background-color: white;
+  margin: 4% 0 3%;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.film-title-ticket h1 {
+  color: #6e4f7d;
+  text-transform: uppercase;
+  margin: 15px 0 15px 25px;
+}
+
+.ticket-options {
+  display: flex;
+}
+
+.select {
+  background-color: white;
+  color: #6e4f7d;
+  border: none;
+  border-radius: 1px;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  margin: 25px 10px 40px 0;
+}
+
+.select p {
+  margin: auto;
+}
+
+.order-page {
+  background-color: white;
+}
+
+.order-page-info {
+  margin: 2% 2.5%;
+}
+
+.buy-steps {
+  color: #6e4f7d;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.buy-steps h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-grid-container {
+  display: grid;
+  grid-template-columns: 85% 10% 0%;
+}
+
+.ticket-info p {
+  text-transform: uppercase;
+  margin: 25px 0 0;
+}
+
+.ticket-select {
+  width: 60px;
+  height: 25px;
+  margin: 5px 0;
+  text-align: center;
+  border-width: 1.2px;
+  border-color: #6e4f7d;
+}
+
+#bottom-hr {
+  margin: 15px 0;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.ticket-price {
+  margin: 10px 0;
+}
+
+.ticket-voucher {
+  display: flex;
+  justify-content: space-between;
+}
+
+#voucher-text {
+  text-transform: uppercase;
+}
+
+#voucher-input {
+  width: 70%;
+  text-align: start;
+  font-size: 10px;
+  padding-left: 15px;
+  border-width: 1.2px;
+  border-color: #6e4f7d;
+}
+
+#voucher-button {
+  border: none;
+  background-color: #6e4f7d;
+  color: white;
+  padding: 5px 75px;
+}
+
+.choose-seats {
+  margin-top: 75px;
+}
+
+.order-seat-placement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.order-seat-placement img {
+  object-fit: contain;
+  width: 700px;
+}
+
+#available-button {
+  background-color: #9d7ec8;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#unavailable-button {
+  background-color: #523579;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#selected-button {
+  background-color: #794eb4;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.order-info {
+  margin-top: 50px;
+}
+
+.order-info-border {
+  border: 3px solid #6e4f7d;
+  margin: 30px 0 50px;
+  height: 440px;
+}
+
+.order-info-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.order-info-poster {
+  object-fit: contain;
+  height: 400px;
+}
+
+.order-ticket-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px;
+}
+
+.order-ticket-title {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.order-ticket-film-restrictions img {
+  margin-right: 3px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.order-ticket {
+  padding: 0;
+}
+
+.order-ticket li {
+  display: flex;
+}
+
+.order-ticket p {
+  margin: 0;
+}
+
+.additional-info-header {
+  padding: 0 5px 0 0;
+}
+
+.order-ticket-total {
+  margin-top: 20px;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  margin: 30px 0 50px;
+}
+
+.email-input {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.name-input,
+.email-input {
+  border: 2px solid #6e4f7d;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 15px;
+  color: #797979;
+}
+
+.payment-choice {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.payment-choice li {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.tos-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#tos-text {
+  color: #666666;
+}
+
+.buy-ticket {
+  display: flex;
+  justify-content: center;
+  background-color: #6e4f7d;
+  color: white;
+  width: 100%;
+  text-decoration: none;
+  border: none;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0 50px 0;
+  text-transform: uppercase;
+}
