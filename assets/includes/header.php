@@ -1,17 +1,17 @@
 <header>
     <nav>
-        <a id="logo-container" href="/index.html">
-            <img id="page-logo" src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
+        <a id="logo-container" href="index.php">
+            <img id="page-logo"  src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
         </a>
         <ul>
             <li>
-                <h2>Film Agenda</h2>
+                <a href="filmagenda.php"><h2>Film Agenda</h2></a>
             </li>
             <li>
-                <h2>Alle Vestigingen</h2>
+                <a href="#"><h2>Alle Vestigingen</h2></a>
             </li>
             <li>
-                <h2>Contact</h2>
+                <a href="#"><h2>Contact</h2></a>
             </li>
         </ul>
     </nav>
