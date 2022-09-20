@@ -27,11 +27,10 @@ include "assets/includes/header.php";
     <div id="main-body">
         <div id="main-info">
             <div class="film-title">
-                <h1>Jurassic World: Fallen Kingdom</h1>
+                <?php echo "<h1>" . $filmdata[$get_movie]['film_title'] . "</h1>"; ?>
             </div>
             <div class="container-film">
-                <img src="<?php
-                            echo '<img src="' . $filmdata[$get_movie]['film_photo'] . '" width="300px">' ?>" alt="JurassicPark">
+                <?php echo '<img src="' . $filmdata[$get_movie]['film_photo'] . '"width=300px">' ?>" alt="JurassicPark">
                 <div class="container-film-info">
                     <div class="film-info">
                         <div class="film-review">
@@ -48,11 +47,12 @@ include "assets/includes/header.php";
                         </div>
                         <div class="film-release">
                             <h3>Release: </h3>
-                            <h3 class="film-release-date">07-06-2018</h3>
+                            <?php echo '<h3>' . $filmdata[$get_movie]['film_releasedate'] . '</h3>' ?>
+
                         </div>
-                        <p class="film-description">
-                            {{ film_shortinfo}}
-                            <!-- In het 3D actie-spektakel Jurassic World: Fallen Kingdom keren favoriete personages
+
+                        <?php echo "<p class='film-description'>" . $filmdata[$get_movie]['film_shortinfo'] . "</p>"; ?>
+                        <!-- In het 3D actie-spektakel Jurassic World: Fallen Kingdom keren favoriete personages
                             terug en
                             worden er nieuwe soorten dinosaurussen geïntroduceerd die nog angstaanjagender zijn dan
                             ooit tevoren.
@@ -81,20 +81,20 @@ include "assets/includes/header.php";
                             Steven Spielberg en Colin Trevorrow treden op als uitvoerend producenten namens
                             Universal Pictures en Amblin Entertainment.
                             Productie is in handen van Frank Marshall, Pat Crowley en Belén Atienza. -->
-                        </p>
+
                         <div class="container-additional-info">
                             <ul class="additional-info">
                                 <li>
                                     <strong class="additional-info-header">Genre: </strong>
-                                    <p>Actie</p>
+                                    <?php echo '<p>' . $filmdata[$get_movie]['genres'] . '</p>' ?>
                                 </li>
                                 <li>
                                     <strong class="additional-info-header">Filmlengte: </strong>
-                                    <p>128 Minuten</p>
+                                    <?php echo '<p>' . $filmdata[$get_movie]['film_length'] . '</p>' ?>
                                 </li>
                                 <li>
                                     <strong class="additional-info-header">Land: </strong>
-                                    <p>VS</p>
+                                    <?php echo '<p>' . $filmdata[$get_movie]['film_country'] . '</p>' ?>
                                 </li>
                                 <li>
                                     <strong class="additional-info-header">IMDB Score: </strong>
@@ -102,7 +102,7 @@ include "assets/includes/header.php";
                                 </li>
                                 <li>
                                     <strong class="additional-info-header">Regisseur: </strong>
-                                    <p>Juan Antonio Bayona</p>
+                                    <?php echo '<p>' . $filmdata[$get_movie]['film_director'] . '</p>' ?>
                                 </li>
                                 <li class="additional-info-header-actor">
                                     <strong>Acteurs:</strong>
