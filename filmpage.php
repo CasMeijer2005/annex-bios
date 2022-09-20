@@ -1,6 +1,6 @@
 <?php
-include "assets/includes/api.php";
 require_once "assets/includes/db.php";
+include "assets/includes/api.php";
 include "assets/includes/head.php";
 include "assets/includes/header.php";
 
@@ -57,8 +57,9 @@ include "assets/includes/header.php";
                                 <li>
                                     <strong class="additional-info-header">Genre: </strong>
                                     <?php
+                                    $space = ', ';
                                     foreach ($filmdata[$get_movie]['genres'] as $genre) {
-                                        echo '<p>' . $genre . '</p>';
+                                        echo '<p>' . $genre . $space . '</p>';
                                     } ?>
                                 </li>
                                 <li>
@@ -79,6 +80,8 @@ include "assets/includes/header.php";
                                 </li>
                                 <li class="additional-info-header-actor">
                                     <strong>Acteurs:</strong>
+                                    <?php
+                                    ?>
                                     <div>
                                         <ul class="info-actors">
                                             <li>
