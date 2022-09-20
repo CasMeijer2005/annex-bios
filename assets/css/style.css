@@ -22,8 +22,12 @@ nav {
   justify-content: space-between;
   text-transform: uppercase;
   margin: 1% 5%;
-}
 
+}
+nav a{
+  text-decoration: none;
+  color: #6e4f7d;
+}
 header ul {
   display: flex;
 }
