@@ -80,7 +80,7 @@ include "assets/includes/header.php";
                 <h4 id="tf2">'  . $filmdata[$eee]["film_releasedate"] . '
                 </h4>
                 <h4 id="tf3">' . $filmdata[$eee]["film_shortinfo"] . '</h4>
-                <button id="btn-draaiende"><a href="filmpage.php?movie=' . array_search($filmdata[$eee]['film_id'], array_column($filmdata, 'film_id')) . '">Meer info</a></button>
+                <button id="btn-draaiende"><a href="filmpage.php?movie=' . array_search($filmdata[$eee]['film_id'], array_column($filmdata, 'film_id')) . '">MEER INFO & TICKETS</a></button>
                 
 
             </div>
@@ -98,7 +98,7 @@ include "assets/includes/header.php";
                 <h4 id="tf2">'  . $filmdata[$eee]["film_releasedate"] . '
                 </h4>
                 <h4 id="tf3">' . $filmdata[$eee]["film_shortinfo"] . '</h4>
-                <button id="btn-draaiende"><a href="filmpage.php?movie=' . array_search($filmdata[$eee]['film_id'], array_column($filmdata, 'film_id')) . '">Meer info</a></button>
+                <button id="btn-draaiende"><a href="filmpage.php?movie=' . array_search($filmdata[$eee]['film_id'], array_column($filmdata, 'film_id')) . '">MEER INFO & TICKETS</a></button>
 
             </div>
         </div>';
