@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  overflow-x: hidden;
+
 }
 header {
   background-color: #fff;
@@ -264,11 +264,14 @@ Select#Category {
 footer {
   max-width: 100%;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
+  max-height: 500px;
   background-color: grey;
   display: flex;
   padding: 75px;
+  box-sizing: border-box;
   align-items: left;
+  overflow: hidden;
 }
 
 footer ul li {
@@ -282,10 +285,10 @@ footer ul li button {
 }
 #filmlijn {
   width: auto;
-  height: 450px;
+  height: 550px !important;
   margin-top: -80px;
-  display: flex;
-  margin-left: auto;
+    margin-left: auto;
+  margin-right: -180px;
 }
 
 #main-body {
