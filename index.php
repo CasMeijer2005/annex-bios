@@ -18,7 +18,7 @@ include "assets/includes/header.php";
              <div class="welkom-text">
                  <h3 id="welkom-2">WELKOM BIJ ANNEXBIOS BILTHOVEN</h3>
                  <h3 id="if">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient</h3>
-                 <button id="btn-kies">BEKIJK DE DRAAIENDE FILMS</button>
+                 <a href="filmagenda.php"><button id="btn-kies">BEKIJK DE DRAAIENDE FILMS</button></a>
              </div>
          </div>
 <div class="film-agenda">

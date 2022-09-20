@@ -1,12 +1,12 @@
 <header>
 
     <nav>
-        <a href="/index.html">
-            <img id="page-logo" src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
+        <a href="index.php">
+            <img id="page-logo"  src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
         </a>
         <ul>
             <li>
-                <a href="#"><h2>Film Agenda</h2></a>
+                <a href="filmagenda.php"><h2>Film Agenda</h2></a>
             </li>
             <li>
                 <a href="#"><h2>Alle Vestigingen</h2></a>
