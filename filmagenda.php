@@ -1,4 +1,5 @@
 <?php
+include 'assets/includes/api.php';
 include 'assets/includes/db.php';
 include 'assets/includes/head.php';
 include 'assets/includes/header.php';
@@ -29,10 +30,6 @@ include 'assets/includes/header.php';
     </div>
     <div class="flex">
         <?php
-        $rawData = file_get_contents('https://annexbios.nickvz.nl/api/');
-        $annex = json_decode($rawData, true);
-        $annexLength = sizeof($annex["filmdata"]);
-        $filmdata = $annex["filmdata"];
 
         for ($eee = 0; $eee < $annexLength; $eee++) {
             echo '<div class="filmposter">

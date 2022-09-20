@@ -1,18 +1,37 @@
 <?php
+include "assets/includes/api.php";
 require_once "assets/includes/db.php";
 include "assets/includes/head.php";
 include "assets/includes/header.php";
 
 ?>
 <main>
+    <?php
 
+    if (isset($_GET['movie'])) {
+        $get_movie = intval($_GET['movie']);
+        $movie_id = 0;
+
+        if (!isset($get_movie)) {
+            return;
+        } else {
+            while ($movie_id != $get_movie) {
+                $movie_id++;
+            }
+        }
+    } else {
+        echo "Kon de informatie niet ophalen, helaas :(";
+    }
+
+    ?>
     <div id="main-body">
         <div id="main-info">
             <div class="film-title">
                 <h1>Jurassic World: Fallen Kingdom</h1>
             </div>
             <div class="container-film">
-                <img src="assets/img/JurassicPark Poster.png" alt="JurassicPark">
+                <img src="<?php
+                            echo '<img src="' . $filmdata[$get_movie]['film_photo'] . '" width="300px">' ?>" alt="JurassicPark">
                 <div class="container-film-info">
                     <div class="film-info">
                         <div class="film-review">
