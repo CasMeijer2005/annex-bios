@@ -134,9 +134,14 @@ label {
     flex-direction: column;
 }
 
+.seats {
+    display: grid;
+    grid-template-columns: auto;
+}
+
 .order-seat-placement img {
     object-fit: contain;
-    width: 700px;
+    width: 50px;
 }
 
 #available-button {
@@ -282,4 +287,8 @@ label {
     font-weight: bold;
     margin: 30px 0 50px 0;
     text-transform: uppercase;
-  }
+}
+
+.ticket-seat {
+    display: none;
+}

@@ -5,6 +5,7 @@ include "assets/includes/header.php"
 ?>
 
 <main >
+    <script src="assets/js/ticket.js"></script>
     <form>
         <div id="ticket-body">
             <div id="main-page">
@@ -100,7 +101,10 @@ include "assets/includes/header.php"
                                 <h4>Stap 2: Kies je stoel</h4>
                             </div>
                             <div class="order-seat-placement">
-                                <img src="assets/img/zaal_paars.png" alt="Zaal img">
+                                <div id="seats">
+                                    <input type="checkbox" class="ticket-seat" id="ticket-seat"/>
+                                    <label for="ticket-seat" class="available-seat"> <img src="assets/img/seats/available-seat.png" alt="available-seat" onclick="changeImage(this)"></label>
+                                </div>
                                 <div class="order-seat-buttons">
                                     <input id="available-button" type="submit" value="Vrij">
                                     <input id="unavailable-button" type="submit" value="Bezet">
