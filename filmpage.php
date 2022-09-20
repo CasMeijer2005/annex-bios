@@ -30,7 +30,7 @@ include "assets/includes/header.php";
                 <?php echo "<h1>" . $filmdata[$get_movie]['film_title'] . "</h1>"; ?>
             </div>
             <div class="container-film">
-                <?php echo '<img src="' . $filmdata[$get_movie]['film_photo'] . '"width=300px">' ?>" alt="JurassicPark">
+                <?php echo '<img alt="film poster" src="' . $filmdata[$get_movie]['film_photo'] . '">' ?>
                 <div class="container-film-info">
                     <div class="film-info">
                         <div class="film-review">
@@ -56,7 +56,10 @@ include "assets/includes/header.php";
                             <ul class="additional-info">
                                 <li>
                                     <strong class="additional-info-header">Genre: </strong>
-                                    <?php echo '<p>' . $filmdata[$get_movie]['genres'] . '</p>' ?>
+                                    <?php
+                                    foreach ($filmdata[$get_movie]['genres'] as $genre) {
+                                        echo '<p>' . $genre . '</p>';
+                                    } ?>
                                 </li>
                                 <li>
                                     <strong class="additional-info-header">Filmlengte: </strong>
