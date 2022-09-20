@@ -13,7 +13,14 @@ include "assets/includes/header.php";
 // <br> <br>' . $filmdata[$eee]["film_shortinfo"] . '
 // </p> </div>';
 ?>
-
+<div class="bgn">
+         <div class="blok1">
+             <div class="welkom-text">
+                 <h3 id="welkom-2">WELKOM BIJ ANNEXBIOS BILTHOVEN</h3>
+                 <h3 id="if">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient</h3>
+                 <button id="btn-kies">BEKIJK DE DRAAIENDE FILMS</button>
+             </div>
+         </div>
 <div class="film-agenda">
 </div>
 <div class="blok2">
@@ -51,7 +58,7 @@ include "assets/includes/header.php";
         </div>
 
         <div id="week"><input type="radio" id="week">
-            <label for="vandaag">DEZE WEEK</label>
+            <label for="week">DEZE WEEK</label>
         </div>
 
         <div id="vandaag"><input type="radio" id="vandaag">
