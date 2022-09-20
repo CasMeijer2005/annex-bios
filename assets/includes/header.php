@@ -6,13 +6,13 @@
         </a>
         <ul>
             <li>
-                <h2>Film Agenda</h2>
+                <a href="#"><h2>Film Agenda</h2></a>
             </li>
             <li>
-                <h2>Alle Vestigingen</h2>
+                <a href="#"><h2>Alle Vestigingen</h2></a>
             </li>
             <li>
-                <h2>Contact</h2>
+                <a href="#"><h2>Contact</h2></a>
             </li>
         </ul>
     </nav>

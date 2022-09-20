@@ -22,8 +22,12 @@ nav {
   justify-content: space-between;
   text-transform: uppercase;
   margin: 1% 5%;
-}
 
+}
+nav a{
+  text-decoration: none;
+  color: #6e4f7d;
+}
 header ul {
   display: flex;
 }
@@ -198,13 +202,14 @@ header li {
   background-color: #fff;
   color: #6e4f7d;
   padding: 10px;
+  width: auto;
 }
 #week {
   float: left;
   background-color: #fff;
   color: #6e4f7d;
-  margin-left: 5px;
-  padding: 10px;
+  margin-left: 15px;
+  width: auto;
 }
 #vandaag {
   float: left;
@@ -213,6 +218,7 @@ header li {
   margin-left: 5px;
   margin-right: 5px;
   padding: 10px;
+   width: auto;
 }
 .flex {
   display: flex;
