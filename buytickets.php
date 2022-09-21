@@ -5,7 +5,6 @@ include "assets/includes/header.php"
 ?>
 
 <main >
-    <script src="assets/js/ticket.js"></script>
     <form>
         <div id="ticket-body">
             <div id="main-page">
@@ -40,7 +39,7 @@ include "assets/includes/header.php"
                                 <div class="ticket-grid-container">
                                     <label for="normal-tickets">Normaal</label>
                                     <p class="ticket-price">&#8364; 9,00</p>
-                                    <select class="ticket-select normal-tickets" name="normal-tickets">
+                                    <select onchange="calculatePrice();" class="ticket-select" id="normal-tickets" name="normal-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -56,8 +55,8 @@ include "assets/includes/header.php"
                                 </div>
                                 <div class="ticket-grid-container">
                                     <label for="child-tickets">Kind t/m 11 jaar</label>
-                                    <p class="ticket-price">&#8364; 5,00</p>
-                                    <select class="ticket-select child-tickets" name="child-tickets">
+                                    <p class="ticket-price" id="child-price">&#8364; 5,00</p>
+                                    <select onchange="calculatePrice();" class="ticket-select" id="child-tickets" name="child-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -74,7 +73,7 @@ include "assets/includes/header.php"
                                 <div class="ticket-grid-container">
                                     <label for="elder-tickets">65+</label>
                                     <p class="ticket-price">&#8364; 7,00</p>
-                                    <select class="ticket-select elder-tickets" name="elder-tickets">
+                                    <select onchange="calculatePrice();" class="ticket-select" id="elder-tickets" name="elder-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -102,8 +101,7 @@ include "assets/includes/header.php"
                             </div>
                             <div class="order-seat-placement">
                                 <div id="seats">
-                                    <input type="checkbox" class="ticket-seat" id="ticket-seat"/>
-                                    <label for="ticket-seat" class="available-seat"> <img src="assets/img/seats/available-seat.png" alt="available-seat" onclick="changeImage(this)"></label>
+                                    
                                 </div>
                                 <div class="order-seat-buttons">
                                     <input id="available-button" type="submit" value="Vrij">
@@ -209,5 +207,6 @@ include "assets/includes/header.php"
         </div>
     </form>
 </main>
+<script src="assets/js/ticket.js"></script>
 
 <?php include "assets/includes/footer.php"; ?>

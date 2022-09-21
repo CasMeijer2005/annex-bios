@@ -134,11 +134,6 @@ label {
     flex-direction: column;
 }
 
-.seats {
-    display: grid;
-    grid-template-columns: auto;
-}
-
 .order-seat-placement img {
     object-fit: contain;
     width: 50px;
@@ -291,4 +286,11 @@ label {
 
 .ticket-seat {
     display: none;
+}
+
+#seats {
+    display: grid;
+    grid-template-columns: repeat(11, 48px);
+    row-gap: 15px;
+    margin-bottom: 30px;
 }
