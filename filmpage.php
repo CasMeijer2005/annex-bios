@@ -41,6 +41,10 @@ include "assets/includes/header.php";
                             <img class="uncolored-star" src="assets/img/Star uncolored.png" alt="uncolored star">
                         </div>
                         <div class="film-restrictions">
+
+                            <?php
+
+                            ?>
                             <img src="assets/img/kijkwijzer-12.png" alt="kijkwijzer 12">
                             <img src="assets/img/kijkwijzer-eng.png" alt="kijkwijzer eng">
                             <img src="assets/img/kijkwijzer-geweld.png" alt="kijkwijzer geweld">
@@ -84,6 +88,14 @@ include "assets/includes/header.php";
                                     ?>
                                     <div>
                                         <ul class="info-actors">
+                                            <?php
+                                            foreach ($film[$get_movie]['actors'] as $actors) {
+                                                echo '<li>
+                                                <img src="' . $actors['photo_url'] . '" alt="' . $actors['firstname'] . $actors['lastname'] . '">
+                                                <p>' . $actors['firstname'] . $actors['lastname'] . '</p>
+                                            </li>';
+                                            };
+                                            ?>
                                             <li>
                                                 <div class="container-actors">
                                                     <img src="assets/img/BryceDallas.png" alt="Bryce Dalas Howard">
