@@ -72,7 +72,7 @@ include "assets/includes/header.php";
             echo '<div class="filmposter">
             <img class="poster" src=" ' . $filmdata[$eee]["film_photo"] . '">
             <div id="textfilm">
-                <h2 id="tf">' . $filmdata[$eee]["film_title"] . '</h2>
+                <h2 id="tilm-title">' . $filmdata[$eee]["film_title"] . '</h2>
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
                 <img id="star" src="assets/img/Path 23.png">
