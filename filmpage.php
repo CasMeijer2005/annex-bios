@@ -89,37 +89,24 @@ include "assets/includes/header.php";
                                     <div>
                                         <ul class="info-actors">
                                             <?php
-                                            foreach ($film[$get_movie]['actors'] as $actors) {
-                                                echo '<li>
-                                                <img src="' . $actors['photo_url'] . '" alt="' . $actors['firstname'] . $actors['lastname'] . '">
-                                                <p>' . $actors['firstname'] . $actors['lastname'] . '</p>
-                                            </li>';
-                                            };
+
+                                            foreach ($filmdata as $film) {
+                                                foreach ($film['actors'] as $actors) {
+                                                    echo '<li>
+                                                    <div class="container-actors">
+                                                    <img src="' . $actors['photo_url'] . '" alt="' . $actors['firstname'] . $actors['lastname'] . '">
+                                                    <p>' . $actors['firstname'] . $actors['lastname'] . '</p>
+                                                    </div>
+                                                    </li>';
+                                                };
+                                            }
                                             ?>
-                                            <li>
+                                            <!-- <li>
                                                 <div class="container-actors">
                                                     <img src="assets/img/BryceDallas.png" alt="Bryce Dalas Howard">
                                                     <p>Bryce Dallas Howard</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="container-actors">
-                                                    <img src="assets/img/Chris_Pratt.png" alt="Chriss Pratt">
-                                                    <p>Chriss Pratt</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="container-actors">
-                                                    <img src="assets/img/rafe_spall.png" alt="Rafe Spall">
-                                                    <p>Rafe Spall</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="container-actors">
-                                                    <img src="assets/img/Toby_Jones.png" alt="Toby Jones">
-                                                    <p>Toby Jones</p>
-                                                </div>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                     </div>
                                 </li>
