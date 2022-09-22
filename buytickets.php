@@ -4,7 +4,7 @@ include "assets/includes/head.php";
 include "assets/includes/header.php"
 ?>
 
-<main >
+<main>
     <form>
         <div id="ticket-body">
             <div id="main-page">
@@ -35,11 +35,11 @@ include "assets/includes/header.php"
                                     <p>Prijs</p>
                                     <p>Aantal</p>
                                 </div>
-                                <hr id="top-hr">
+                                <hr>
                                 <div class="ticket-grid-container">
                                     <label for="normal-tickets">Normaal</label>
                                     <p class="ticket-price">&#8364; 9,00</p>
-                                    <select class="ticket-select normal-tickets" name="normal-tickets">
+                                    <select onchange="calculateTickets();" class="ticket-select" id="normal-tickets" name="normal-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -55,8 +55,8 @@ include "assets/includes/header.php"
                                 </div>
                                 <div class="ticket-grid-container">
                                     <label for="child-tickets">Kind t/m 11 jaar</label>
-                                    <p class="ticket-price">&#8364; 5,00</p>
-                                    <select class="ticket-select child-tickets" name="child-tickets">
+                                    <p class="ticket-price" id="child-price">&#8364; 5,00</p>
+                                    <select onchange="calculateTickets();" class="ticket-select" id="child-tickets" name="child-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -73,7 +73,7 @@ include "assets/includes/header.php"
                                 <div class="ticket-grid-container">
                                     <label for="elder-tickets">65+</label>
                                     <p class="ticket-price">&#8364; 7,00</p>
-                                    <select class="ticket-select elder-tickets" name="elder-tickets">
+                                    <select onchange="calculateTickets();" class="ticket-select" id="elder-tickets" name="elder-tickets">
                                         <option value="0" selected>0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -100,11 +100,11 @@ include "assets/includes/header.php"
                                 <h4>Stap 2: Kies je stoel</h4>
                             </div>
                             <div class="order-seat-placement">
-                                <img src="assets/img/zaal_paars.png" alt="Zaal img">
+                                <div id="seats"></div>
                                 <div class="order-seat-buttons">
-                                    <input id="available-button" type="submit" value="Vrij">
-                                    <input id="unavailable-button" type="submit" value="Bezet">
-                                    <input id="selected-button" type="submit" value="Jouw Selectie">
+                                    <p class="seat-button" id="available-button">Vrij</p>
+                                    <p class="seat-button" id="unavailable-button">Bezet</p>
+                                    <p class="seat-button" id="selected-button">Jouw Selectie</p>
                                 </div>
                             </div>
                         </div>
@@ -205,5 +205,6 @@ include "assets/includes/header.php"
         </div>
     </form>
 </main>
+<script src="assets/js/ticket.js"></script>
 
 <?php include "assets/includes/footer.php"; ?>

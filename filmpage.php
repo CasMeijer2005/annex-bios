@@ -115,7 +115,6 @@ include "assets/includes/header.php";
                     </div>
                 </div>
             </div>
-
             <a class="buy-tickets" href="index.php">
                 <div>
                     <h1>Koop Je Tickets</h1>

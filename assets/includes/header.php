@@ -1,7 +1,6 @@
 <header>
-
     <nav>
-        <a href="index.php">
+        <a id="logo-container" href="index.php">
             <img id="page-logo"  src="assets/img/AnnexBios Bilthoven.png" alt="AnnexBios logo">
         </a>
         <ul>

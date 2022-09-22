@@ -9,7 +9,7 @@ header {
   background-color: #fff;
 }
 #page-logo {
-  object-fit: cover;
+  object-fit: contain;
   width: 250px;
 }
 
