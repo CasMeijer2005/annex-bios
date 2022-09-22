@@ -9,16 +9,16 @@ function createSeats(let) {
     const parentLabel = document.getElementsByClassName("available-seat");
     
     while (createdSeats < let) {
-        var newCheckbox = document.createElement("input");
+        const newCheckbox = document.createElement("input");
         newCheckbox.setAttribute("type", 'checkbox');
         newCheckbox.setAttribute("class", 'ticket-seat')
         newCheckbox.setAttribute("id", 'ticket-seat');
         
-        var newLabel = document.createElement("label");
+        const newLabel = document.createElement("label");
         newLabel.setAttribute("for", 'ticket-seat');
         newLabel.setAttribute("class", 'available-seat');
         
-        var newImg = document.createElement("img");
+        const newImg = document.createElement("img");
         newImg.src = "assets/img/seats/available-seat.png";
         newImg.setAttribute("onclick", 'changeImage(this)');
         
@@ -32,8 +32,7 @@ function createSeats(let) {
     }
 }
 
-
-function calculatePrice() {
+function calculateTickets() {
     let normalTickets = parseInt(document.getElementById("normal-tickets").value);
     let childTickets = parseInt(document.getElementById("child-tickets").value);
     let elderTickets = parseInt(document.getElementById("elder-tickets").value);
@@ -45,17 +44,14 @@ function calculatePrice() {
 let selected = 0;
 
 function changeImage(image) {
-    //if (selected < totalTickets) {
-        if (true) {
+    if (image.getAttribute('src') != "assets/img/seats/occupied-seat.png") {
+        if (selected < totalTickets && image.getAttribute("src") === "assets/img/seats/available-seat.png") {
             image.src = "assets/img/seats/selected-seat.png";
-            seatSelected = true;
             selected++;
         }
-        else if (seatSelected) {
+        else if (selected != 0 && image.getAttribute("src") === "assets/img/seats/selected-seat.png") {
             image.src = "assets/img/seats/available-seat.png";
-            seatSelected = false;
-            selected--;
+            selected--; 
         }
-    //}
-    console.log(selected);
+    }
 }
